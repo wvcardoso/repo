@@ -1,0 +1,10 @@
+
+# Instalando
+yum install stress -y
+yum install stress-ng -y
+
+# Stressando CPU
+stress --cpu 2 --timeout 60
+
+#  
+stress --cpu 8 --io 4 --vm 2 --vm-bytes 128M --timeout 10s
