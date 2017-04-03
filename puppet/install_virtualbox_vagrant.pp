@@ -1,6 +1,20 @@
 
 ### Array dos repositorios
 $repos = [ 'http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo',     ]
+$pkgs  = ['binutils',
+          'gcc',
+          'make',
+          'patch',
+          'libgomp',
+          'glibc-headers',
+          'glibc-devel',
+          'kernel-headers',
+          'kernel-devel',
+          'dkms',
+          'vagrant',
+          'vagrant-libvirt',
+          'vagrant-libvirt-doc',
+        ]
 
 ### For no array
 $repos.each | $repo | {
@@ -16,5 +30,15 @@ $repos.each | $repo | {
      ensure => file,
      source => $repo,
    }
-
 }
+
+package { $pkgs:
+  ensure => present,
+}
+
+
+
+
+
+
+
