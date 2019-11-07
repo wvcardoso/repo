@@ -29,5 +29,5 @@ Willian Cardoso <wvcardoso@gmail.com>
 ## Credits
 Willian Cardoso <wvcardoso@gmail.com>
 
-## License:
+## License
 
