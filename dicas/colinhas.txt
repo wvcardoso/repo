@@ -1,0 +1,4 @@
+
+# Criando tunel para usar de proxy no browser
+# Usando SmartProxy for firefox
+# ssh -f -N -D 3000 <usuario>@IP > /dev/null 2>&1
